@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <include
+        android:id="@+id/include_sign_in_tool_bar"
+        layout="@layout/sign_in_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="499dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:layout_marginTop="83dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="56.5dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_center"
+            android:layout_width="233dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/button_login_google"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#d8d8d8"
+                    android:text="GOOGLE"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/invisible_center"
+                    app:layout_constraintTop_toTopOf="@+id/button_login_kakao"
+                    tools:ignore="NotSibling" />
+
+                <Button
+                    android:id="@+id/button_login_kakao"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="78dp"
+                    android:layout_marginTop="11.3dp"
+                    android:layout_weight="1"
+                    android:background="#d8d8d8"
+                    android:text="KAKAO"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/invisible_center"
+                    app:layout_constraintStart_toStartOf="@+id/button_login"
+                    app:layout_constraintTop_toBottomOf="@+id/button_login"
+                    tools:ignore="NotSibling" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_marginBottom="289dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="65dp"
+                    android:src="@drawable/image_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.193"
+                    app:srcCompat="@drawable/image_1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="233dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_border_gray"
+                    android:onClick="onButton2Clicked"
+                    android:text="회원가입"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <Button
+                    android:id="@+id/invisible_center"
+                    android:layout_width="11dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text=" "
+                    app:layout_constraintBottom_toBottomOf="@+id/button_login_google"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/button_login_google" />
+
+                <Button
+                    android:id="@+id/button_login"
+                    android:layout_width="233dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="7.7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_border_gray"
+                    android:onClick="onButton1Clicked"
+                    android:text="로그인"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="57.5dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

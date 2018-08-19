@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "51300531323",
+    "firebase_url": "https://donari-994cf.firebaseio.com",
+    "project_id": "donari-994cf",
+    "storage_bucket": "donari-994cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51300531323:android:94592f36f660a2bc",
+        "android_client_info": {
+          "package_name": "com.example.myeonsic.donari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51300531323-esjauj5uv00erbtrid17bmt8dg1jf8k0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myeonsic.donari",
+            "certificate_hash": "4b4c5284654a83af0b71da3d327b2502373b14e4"
+          }
+        },
+        {
+          "client_id": "51300531323-5ov7a8du71lfqnihs7kkb2s5blcumjfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFYOLcS8FqoD5bKZsy2o6jJfRAKgtg5eU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51300531323-5ov7a8du71lfqnihs7kkb2s5blcumjfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
